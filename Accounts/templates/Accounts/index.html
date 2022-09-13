@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,7 @@
             <style>
                 body
 {
-    background-image: url('./4.jpg');
+    background-image: url("{% static '/img/4.jpg' %}");
     background-size: cover;
     background-repeat: no-repeat;
     color: aliceblue;
@@ -35,8 +36,8 @@
         </marquee>
             </h1>
         <div align="center" class="home">
-            <button class="button"onclick="document.location='facultylogin.html'">FACULTY</button>
-            <button class="button"onclick="document.location='adminlogin.html'">ADMIN</button>
+            <button class="button"onclick="document.location='facultylogin'">FACULTY</button>
+            <button class="button"onclick="document.location='adminLogin'">ADMIN</button>
 
         </div>
     </body>
