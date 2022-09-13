@@ -27,10 +27,24 @@ body {
       color: #000;
       padding: 35px 20px;
     }
-
+    .nav-items a:hover{
+        background-color: rgb(212, 178, 138);
+      color: rgb(255, 255, 255);
+      border-bottom: 3px solid yellow;
+      border-top: 3px solid yellow ;
+      border-left: 3px solid yellow;
+      border-right: 3px solid yellow;
+    
+    }
 .footer {
     display: flex;
-      justify-content: space-between;
-      
-      background-color: #fad9d96e;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+     bottom: 0;
+     width: 100%;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    background-color: #fad9d96e;
+
 }
