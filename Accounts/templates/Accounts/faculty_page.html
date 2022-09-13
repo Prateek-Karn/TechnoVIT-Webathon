@@ -1,3 +1,4 @@
+{% load static %}
 <html>    
 <head>    
     <meta charset="utf-8">    
@@ -5,12 +6,12 @@
 </head>    
 <body>
     <header class="header">
-<img align="middle"src="j1.png" class="logo" height="90" width="90px">
+<img align="middle"src="{% static'images/j1.png'%}" class="logo" height="90" width="90px">
 <nav  class="nav-items">
     <a  href="#">Faculty</a>
     </nav>
     </header>
-<link rel="stylesheet" href="faculty_page.css">
+<link rel="stylesheet" href="{%static '/css/faculty_page.css'%}">
 <footer class="footer">
     <div class="copy">&copy; 2022 Developers</div>
     <div class="bottom-links">

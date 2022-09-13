@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,7 @@
         Welcome to VIT
         </marquee>
             </h1>
-        <link rel="stylesheet" href="welcome.css">
+        <link rel="stylesheet" href="{%static '/css/welcome.css'%}">
         <div align="center" class="home">
             <button class="button"onclick="document.location='faculty.html'">FACULTY</button>
             <button class="button"onclick="document.location='admin.html'">ADMIN</button>
