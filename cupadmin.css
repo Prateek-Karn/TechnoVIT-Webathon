@@ -15,9 +15,9 @@ div {
       transform: translate(-50%, -50%);
   }
   body {
-    margin: auto;
-    width: 640px; 
-   padding: 50px;
+    margin: 0;
+    width: 811px; 
+   padding: 0px;
     color: #2E475D;    }
   
   .container { 
@@ -31,11 +31,12 @@ div {
 .header {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width:100%;
     align-items: center;
     background-color: #f5f5f5;}
 
 .header .logo {
-    
   color: #000;
   text-decoration: none;
   margin-left: 30px;
@@ -52,11 +53,42 @@ div {
   text-decoration: none;
     color: #000;
     padding: 35px 20px;
+    background-color: #f5f5f5;
   }
 
+.nav-items a:hover{
+    background-color: rgb(212, 178, 138);
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid yellow;
+  border-top: 3px solid yellow ;
+  border-left: 3px solid yellow;
+  border-right: 3px solid yellow;
+
+}
+.intro{
+    width: 253px;
+    height: 110px;
+    padding: 15px;
+    background-color: rgb(241, 247, 255);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: block;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .footer {
-  display: flex;
+    display: flex;
     justify-content: space-between;
-    
+    position: fixed;
+    left: 0;
+     bottom: 0;
+     width: 100%;
+    color: rgb(3, 3, 3);
+    text-align: center;
     background-color: #fad9d96e;
 }
