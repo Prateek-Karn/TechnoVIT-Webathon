@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>VIT Portal Login</title>
+    <link rel="stylesheet" href="login.css">
+<style>
+body 
+{
+background-image:url('bg.jpg');
+background-repeat:no-repeat;
+background-size: cover;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="logintitle">Admin Login</h1>
+            <div class="logingroup">
+                <input type="text" class="credinput" autofocus placeholder="Username">
+                <div class="error-message"></div>
+            </div>
+            <div class="logingroup">
+                <input type="password" class="credinput" autofocus placeholder="Password">
+                <div class="error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Sign In</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+        </form>
+    </div>
+    <script src="./src/main.js"></script>
+</body>

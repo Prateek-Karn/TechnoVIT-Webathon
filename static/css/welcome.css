@@ -1,0 +1,28 @@
+body
+{
+    background-image: url('s1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+m
+body{
+    font-size: 70%
+}
+.home
+{
+    font-size: 100%;
+    color: blue;
+}
+.button {
+    background-color:rgb(51, 114, 230);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
