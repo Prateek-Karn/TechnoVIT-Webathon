@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title> Admin homepage</title>
-        <link rel="stylesheet" href="hpstyle.css">
+        <link rel="stylesheet" href="{%static '/css/hpstyle.css%">
     </head>
     <body>
         <header class="header">
-            <a href="adminhp.html" class="logo"><img src="1.png" height="90" width= "90"></a>
+            <a href="adminhp.html" class="logo"><img src="{% static'images/1.png'%}" height="90" width= "90"</a>
             <nav class="nav-items">
               <a href="#">Admin</a>
             </nav>
           </header>
           <main>
+            <main>
                 <div class="intro">
-
                 </div>
               </main>
               <div class="content">
@@ -23,23 +24,23 @@
                         &nbsp;
                         &nbsp;
                     &nbsp;
-                        <td><frame name="left" src="uploadcoursesadmin.html"></frame>
-                  <button class="button"onclick="document.location='uploadcoursesadmin.html'">UPLOAD COURSES</button> 
+                        <td><frame name="left" src="#"></frame>
+                  <button class="button"onclick="document.location='#'">UPLOAD COURSES</button> 
                         <br>
                         
-                  <frame name="right" src="viewaddcourses.html"></frame> 
-                  <button class="button"onclick="document.location='viewaddcourses.html'">VIEW AND ADD</button> 
+                  <frame name="right" src="#"></frame> 
+                  <button class="button"onclick="document.location='#'">VIEW AND ADD</button> 
                     <br>
-                    <frame name="left" src="wishlistviewadmin.html"></frame>
-                  <button class="button"onclick="document.location='wishlistviewadmin.html'">WISHLIST DATA</button>
+                    <frame name="left" src="#"></frame>
+                  <button class="button"onclick="document.location='#'">WISHLIST DATA</button>
                         </td>
                   
                  <td>
                     &nbsp;
                     &nbsp;
                     &nbsp;
-                <frame name="right" src="facultyinfo.html"></frame>
-                  <button class="button"onclick="document.location='facultyinfo.html'">FACULTY INFO</button>
+                <frame name="right" src="#"></frame>
+                  <button class="button"onclick="document.location='#'">FACULTY INFO</button>
                  <br>
                       <frame name="left" src="#"></frame>
                   <button class="button"onclick="document.location='#'">PREFERENCES</button>
@@ -50,7 +51,6 @@
                      </table>  
               </div> 
               </frameset>    
-
 
           <footer class="footer">
             <div class="copy">&copy; 2022 Developers</div>
