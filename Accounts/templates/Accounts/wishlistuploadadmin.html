@@ -6,7 +6,7 @@
     </head>
 <body >
     <header class="header">
-        <a href="adminhp.html" class="logo"><img src="1.png" height="90" width= "90"</a>
+        <a href="{% url 'adminhp' %}" class="logo"><img src="{% static 'img/1.png' %}" height="90" width= "90"</a>
         <nav class="nav-items">
           <a href="#">Admin</a>
         </nav>
@@ -28,7 +28,7 @@
     <div class="copy">&copy; 2022 Developers</div>
     
       <div class="links">
-        <a href="adminhp.html">Home</a>
+        <a href="{% url 'adminhp' %}">Home</a>
       </div>
 
 </body>

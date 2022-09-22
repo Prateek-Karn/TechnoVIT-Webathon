@@ -13,5 +13,5 @@ urlpatterns = [
     path('viewfacpref/', views.viewfacpref, name='viewfacpref'),
     path('wishlistuploadadmin/', views.wishlistuploadadmin, name='wishlistuploadadmin'),
     path('wishlistviewadmin/', views.wishlistviewadmin, name='wishlistviewadmin'),
-
+    path('login_user/', views.login_user, name='login_user' ),
 ]

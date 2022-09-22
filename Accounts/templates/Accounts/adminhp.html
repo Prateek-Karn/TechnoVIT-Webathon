@@ -7,7 +7,7 @@
     </head>
     <body>
         <header class="header">
-            <a href="adminhp.html" class="logo"><img src="1.png" height="90" width= "90"></a>
+            <a href="{% url 'adminhp' %}" class="logo"><img src="{% static 'img/1.png' %}" height="90" width= "90"></a>
             <nav class="nav-items">
               <a href="#">Admin</a>
             </nav>
@@ -24,26 +24,26 @@
                         &nbsp;
                         &nbsp;
                     &nbsp;
-                        <td><frame name="left" src="uploadcoursesadmin.html"></frame>
-                  <button class="button"onclick="document.location='uploadcoursesadmin.html'">UPLOAD COURSES</button> 
+                        <td><frame name="left" src="{% url 'uploadcoursesadmin' %}"></frame>
+                  <button class="button"onclick="document.location='{%url 'uploadcoursesadmin' %}'">UPLOAD COURSES</button> 
                         <br>
                         
-                  <frame name="right" src="viewaddcourses.html"></frame> 
-                  <button class="button"onclick="document.location='viewaddcourses.html'">VIEW AND ADD</button> 
+                  <frame name="right" src="{% url 'viewaddcourses'%}"></frame> 
+                  <button class="button"onclick="document.location='{% url 'viewaddcourses'%}'">VIEW AND ADD</button> 
                     <br>
-                    <frame name="left" src="wishlistviewadmin.html"></frame>
-                  <button class="button"onclick="document.location='wishlistviewadmin.html'">WISHLIST DATA</button>
+                    <frame name="left" src="{% url 'wishlistviewadmin'%}"></frame>
+                  <button class="button"onclick="document.location='{%url 'wishlistviewadmin'%}'">WISHLIST DATA</button>
                         </td>
                   
                  <td>
                     &nbsp;
                     &nbsp;
                     &nbsp;
-                <frame name="right" src="facultyinfo.html"></frame>
-                  <button class="button"onclick="document.location='facultyinfo.html'">FACULTY INFO</button>
+                <frame name="right" src="{% url 'facultyinfo' %}"></frame>
+                  <button class="button"onclick="document.location='{% url 'facultyinfo' %}'">FACULTY INFO</button>
                  <br>
-                      <frame name="left" src="#"></frame>
-                  <button class="button"onclick="document.location='#'">PREFERENCES</button>
+                      <frame name="left" src="{%url 'viewfacpref' %}"></frame>
+                  <button class="button"onclick="document.location='{%url 'viewfacpref' %}'">PREFERENCES</button>
                   <br>
                   <frame name="right" src="#"></frame>
                   <button class="button"onclick="document.location='#'">ALLOCATION</button>

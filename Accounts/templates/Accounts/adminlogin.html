@@ -1,7 +1,8 @@
+{%load static %}
 <!DOCTYPE html>
 <head>
     <title>VIT Portal Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="{% static 'css/login.css'%}">
 <style>
 body 
 {
@@ -13,7 +14,9 @@ background-size: cover;
 </head>
 <body>
     <div class="container">
-        <form class="form" id="login">
+        <form class="form" id="login" method="POST" action="{% url 'login_user' %}">
+            {%csrf_token%}
+            {{form.as_p}}
             <h1 class="logintitle">Admin Login</h1>
             <div class="logingroup">
                 <input type="text" class="credinput" autofocus placeholder="Username">
